@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+  version="5.0">
+
+    <display-name>Servlet_Project</display-name>
+
+    <welcome-file-list>
+        <welcome-file>home.html</welcome-file>
+        <welcome-file>Login.html</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.Servlet_Practice02.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignUp</servlet-name>
+        <servlet-class>com.Servlet_Practice02.SignUp</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUp</servlet-name>
+        <url-pattern>/SignUp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>ConfirmBooking</servlet-name>
+    <servlet-class>com.Servlet_Practice02.ConfirmBooking</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>ConfirmBooking</servlet-name>
+	    <url-pattern>/ConfirmBooking</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.Servlet_Practice02.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>LogoutServlet</servlet-name>
+	    <url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+
+</web-app>
